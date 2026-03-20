@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="app.js" defer></script>
+</head>
+<body class="flex flex-col justify-between min-h-screen bg-gray-100">
+    <header>
+        <h1 class="text-xl font-bold text-center p-5">Worker's Demo</h1>
+    </header>
+    <main class="">
+        <div id="chatWindow" class="fixed bottom-4 right-4 bg-white w-80 max-h-[425px] overflow-hidden transition-all duration-300 ease-in-out">
+            <header  id="chatHeader" class="flex items-center justify-between border-b border-gray-200 h-[50px]">
+                <h2>Worker's Chat Bot</h2>
+                <span id="time">2m ago</span>
+            </header>
+
+            <output>
+
+                <div class="h-[300px] overflow-auto space-y-3" id="output"></div>
+
+            </output>
+            <section>
+                <form class="flex gap-2 border-t border-gray-200 justify-end" id="inputArea">
+                        <input class="border-gray-300 flex-1 border-1 rounded-md text-sm px-3 py-2 focus:border-blue-500" name="prompt" id="prompt" placeholder="Enter your question here."></textarea>
+                    <button class="rounded-md px-4 py-2 bg-blue-600 text-white">Send</button>
+                </form>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center p-3">Copyright Lewis Benson &copy;</footer>
+
+</body>
+</html>
